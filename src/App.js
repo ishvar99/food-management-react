@@ -8,7 +8,7 @@ function App() {
   return (
     <Provider store={store}>
     <div className="App">
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <Routing/>
       </Router>
     </div>
