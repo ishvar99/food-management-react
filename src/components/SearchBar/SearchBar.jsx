@@ -8,7 +8,7 @@ const SearchBar = () => {
  const state = useSelector((state) => state.dishes)
  useEffect(() => {
   if (state.filtered && state.filtered.length === 0) {
-    document.getElementById('filter').value = '';
+    // document.getElementById('filter').value = '';
     dispatch(clearFilter());
   }
 }, [state.filtered]);
