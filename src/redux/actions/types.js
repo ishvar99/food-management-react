@@ -1,0 +1,7 @@
+export const ADD_DISH="ADD_DISH"
+export const EDIT_DISH= "EDIT_DISH"
+export const DELETE_DISH= "DELETE_DISH"
+export const DISPLAY_DISHES="DISPLAY_DISHES"
+export const FILTER_DISHES = "FILTER_DISHES"
+export const CLEAR_FILTER = "CLEAR_FILTER"
+export const SET_DISHES = "SET_DISHES"
