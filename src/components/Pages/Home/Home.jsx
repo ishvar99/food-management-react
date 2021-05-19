@@ -11,10 +11,10 @@ const Home = () => {
  const state = useSelector((state) => state.dishes)
  const {dishes,filtered}=state;
  console.log(filtered)
- useEffect(() => {
-  console.log('home')
-  dispatch(setDishes())
- }, [])
+//  useEffect(() => {
+//   console.log('home')
+//   dispatch(setDishes())
+//  }, [])
  return (
   <div>
   {/* <NavBar btn={'Admin Panel'}/> */}

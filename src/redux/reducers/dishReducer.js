@@ -17,7 +17,7 @@ const dishReducer=  (state = initialState, action) => {
      localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
      return {
        ...state,
-      //  dishes:initialState.dishes
+     
      }
    }
    case EDIT_DISH: {
@@ -27,7 +27,7 @@ const dishReducer=  (state = initialState, action) => {
     localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
     return {
       ...state,
-      // dishes:initialState.dishes
+     
     }
   }
   case DELETE_DISH: {
@@ -36,7 +36,7 @@ const dishReducer=  (state = initialState, action) => {
     localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
     return {
       ...state,
-      // dishes:initialState.dishes
+      
     }
   }
   case SET_DISHES: {

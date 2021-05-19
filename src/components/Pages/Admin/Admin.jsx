@@ -11,9 +11,9 @@ const Admin = () => {
   const [modalShow, setModalShow] = useState(false);
   const [showSnackbar,setShowSnackbar]=useState(false);
   const [data, setData] = useState();
-  useEffect(() => {
-    dispatch(setDishes())
-   }, [])
+  // useEffect(() => {
+  //   dispatch(setDishes())
+  //  }, [])
   const removeDish =(id)=>{
     dispatch(deleteDish(id))
     setShowSnackbar(true);
