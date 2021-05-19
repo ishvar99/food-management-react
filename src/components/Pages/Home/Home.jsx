@@ -32,8 +32,8 @@ const Home = () => {
     </div>
     :
     <div className='d-flex justify-content-center align-items-center ' style={{marginTop:'150px'}}>
-    <div className="alert alert-danger w-50 text-center" role="alert">
-  <h4>Add dishes from the admin panel to display here!</h4>
+    <div className="alert alert-secondary w-25 text-center" role="alert">
+  <h5><strong>Add dishes from the admin panel to display here!</strong></h5>
 </div>
     </div>
    }
