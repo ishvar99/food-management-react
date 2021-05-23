@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/food-management-react/static/css/main.6ba99c8d.chunk.css",
-    "main.js": "/food-management-react/static/js/main.29a33532.chunk.js",
-    "main.js.map": "/food-management-react/static/js/main.29a33532.chunk.js.map",
+    "main.js": "/food-management-react/static/js/main.60619ca9.chunk.js",
+    "main.js.map": "/food-management-react/static/js/main.60619ca9.chunk.js.map",
     "runtime-main.js": "/food-management-react/static/js/runtime-main.f8aeb271.js",
     "runtime-main.js.map": "/food-management-react/static/js/runtime-main.f8aeb271.js.map",
     "static/css/2.92200efa.chunk.css": "/food-management-react/static/css/2.92200efa.chunk.css",
-    "static/js/2.f981a483.chunk.js": "/food-management-react/static/js/2.f981a483.chunk.js",
-    "static/js/2.f981a483.chunk.js.map": "/food-management-react/static/js/2.f981a483.chunk.js.map",
+    "static/js/2.c8d3e42e.chunk.js": "/food-management-react/static/js/2.c8d3e42e.chunk.js",
+    "static/js/2.c8d3e42e.chunk.js.map": "/food-management-react/static/js/2.c8d3e42e.chunk.js.map",
     "index.html": "/food-management-react/index.html",
     "static/css/2.92200efa.chunk.css.map": "/food-management-react/static/css/2.92200efa.chunk.css.map",
     "static/css/main.6ba99c8d.chunk.css.map": "/food-management-react/static/css/main.6ba99c8d.chunk.css.map",
-    "static/js/2.f981a483.chunk.js.LICENSE.txt": "/food-management-react/static/js/2.f981a483.chunk.js.LICENSE.txt"
+    "static/js/2.c8d3e42e.chunk.js.LICENSE.txt": "/food-management-react/static/js/2.c8d3e42e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f8aeb271.js",
     "static/css/2.92200efa.chunk.css",
-    "static/js/2.f981a483.chunk.js",
+    "static/js/2.c8d3e42e.chunk.js",
     "static/css/main.6ba99c8d.chunk.css",
-    "static/js/main.29a33532.chunk.js"
+    "static/js/main.60619ca9.chunk.js"
   ]
 }
