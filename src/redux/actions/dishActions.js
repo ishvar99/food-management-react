@@ -30,13 +30,6 @@ import {
    })
   }
  }
- export const setDishes= ()=>{
-   return async (dispatch)=>{
-     dispatch({
-       type: SET_DISHES
-     })
-   }
- }
  export const deleteDish=(id)=>{
    console.log(id);
   return async (dispatch)=>{

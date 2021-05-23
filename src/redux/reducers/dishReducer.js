@@ -3,7 +3,6 @@ import {
  EDIT_DISH,
  DELETE_DISH,
  CLEAR_FILTER,
- SET_DISHES,
  FILTER_DISHES
 } from "../actions/types"
 const initialState = {
@@ -13,49 +12,36 @@ const initialState = {
 const dishReducer=  (state = initialState, action) => {
  switch (action.type) {
    case ADD_DISH: {
-     initialState.dishes.push(action.payload)
-     localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
      return {
        ...state,
-     
+       dishes: [...state.dishes,action.payload]
      }
    }
    case EDIT_DISH: {
-     const {id}=action.payload;
-    const foundIndex= initialState.dishes.findIndex((e)=>e.id===id);
-    initialState.dishes[foundIndex]=action.payload
-    localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
+    // const foundIndex= initialState.dishes.findIndex((e)=>e.id===id);
+    // initialState.dishes[foundIndex]=action.payload
     return {
       ...state,
-     
+     dishes: [
+       ...state.dishes.map((dish)=>dish.id===action.payload.id?action.payload:dish)
+      ]
     }
   }
   case DELETE_DISH: {
-    const foundIndex = initialState.dishes.findIndex((e)=>e.id===action.payload)
-    initialState.dishes.splice(foundIndex,1)
-    localStorage.setItem('dishes',JSON.stringify(initialState.dishes))
+    // const foundIndex = initialState.dishes.findIndex((e)=>e.id===action.payload)
+    // initialState.dishes.splice(foundIndex,1)
     return {
       ...state,
-      
+      dishes: state.dishes.filter((dish) => {
+        return dish.id !== action.payload;
+      }),
+    };
     }
-  }
-  case SET_DISHES: {
-    let fetchedDishes = localStorage.getItem('dishes')
-    if(fetchedDishes){
-      initialState.dishes =JSON.parse(fetchedDishes)
-      return {
-        ...state
-      }
-    }
-    return {
-      ...state
-    }
-  }
   case FILTER_DISHES: {
     console.log('filter dishes')
     return {
       ...state,
-      filtered: initialState.dishes.filter((dish) => {
+      filtered: state.dishes.filter((dish) => {
         let re = new RegExp(`${action.payload}`, 'gi');
         return dish.name.match(re);
       }),
