@@ -12,7 +12,7 @@ const Dish = ({dish}) => {
   <Card.Body>
     <Card.Title className='text-center mb-3'><strong>{name}</strong></Card.Title>
     <Card.Text>
-    <strong><span style={{color: '#17A2B8'}}>Proteins : {(proteins+fats+carbs)} g</span></strong> 
+    <strong><span style={{color: '#17A2B8'}}>Proteins : {(proteins)} g</span></strong> 
     <div className="progress mb-3">
     <div className="progress-bar bg-info" style={{width:`${(proteins/(proteins+fats+carbs))*100}%`}}>
     <i className="fas fa-dna"></i>
