@@ -12,20 +12,20 @@ const Dish = ({dish}) => {
   <Card.Body>
     <Card.Title className='text-center mb-3'><strong>{name}</strong></Card.Title>
     <Card.Text>
-    <strong><span style={{color: '#17A2B8'}}>Proteins : {(proteins)} g</span></strong> 
+    <strong><span style={{color: '#17A2B8'}}>Total Proteins : {(proteins)} g</span></strong> 
     <div className="progress mb-3">
     <div className="progress-bar bg-info" style={{width:`${(proteins/(proteins+fats+carbs))*100}%`}}>
     <i className="fas fa-dna"></i>
     </div>
     </div>
     {/* <br/> */}
-    <strong><span style={{color: '#FFC107'}}>Carbs : {carbs} g</span></strong> 
+    <strong><span style={{color: '#FFC107'}}>Total Carbs : {carbs} g</span></strong> 
     <div className="progress mb-3">
     <div className="progress-bar bg-warning" style={{width:`${(carbs/(proteins+fats+carbs))*100}%`}}>
     <i className="fas fa-bread-slice"></i>
     </div>
     </div>
-    <strong><span style={{color: '#DC3545'}}>Fats : {fats} g</span></strong> 
+    <strong><span style={{color: '#DC3545'}}>Total Fats : {fats} g</span></strong> 
     <div className="progress mb-3">
     <div className="progress-bar bg-danger" style={{width:`${(fats/(proteins+fats+carbs))*100}%`}}>
     <i className="fas fa-tint"></i>
